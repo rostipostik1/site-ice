@@ -1,0 +1,134 @@
+@media(max-width:1200px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .detalis-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .detalis {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:980px) {
+    .nav {
+        gap: 100px;
+    }
+
+    .product-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .app-wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .app-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-text {
+        text-align: center;
+    }
+
+    .app-title {
+        text-align: center;
+    }
+}
+
+@media(max-width:850px) {
+    .nav {
+        background: pink;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        transition: .3s linear;
+        overflow-x: hidden;
+    }
+
+    .nav.active{
+        left: 0;
+        right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+        width: 60px;
+        height: 40px;
+        background: url(../img/burger.svg) no-repeat center;
+        position: relative;
+        z-index: 5;
+        transition: .3s linear;
+    }
+
+    .burger.active{
+        background: url(../img/close.svg) no-repeat center;
+    }
+
+    .header-wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width) {}
+
+@media(max-width:590px) {
+    .queston-form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .queston-btn {
+        position: static;
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width) {}
+
+@media(max-width:390px) {
+
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-btn {
+        position: relative;
+        width: 100%;
+    }
+
+    .footer-colom-form {
+        width: 100%;
+    }
+
+    .footer-colom {
+        width: 100%;
+    }
+
+    .app-block {
+        flex-direction: column;
+        align-items: center;
+    }
+}
